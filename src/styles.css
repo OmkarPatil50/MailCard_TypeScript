@@ -1,0 +1,118 @@
+.App {
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1rem;
+  width: 200px;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  color: #666;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a.active {
+  font-weight: 600;
+  color: #202124;
+  border-right: 4px solid #202124;
+}
+
+.mail-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 1rem;
+  margin: 1rem;
+  flex: 1;
+}
+
+.mail-list-item {
+  list-style: none;
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.mail-list .mail-list-item:hover {
+  background-color: #f5f5f5;
+}
+
+/* mail card */
+
+.mail-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mail-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mail-list-item button {
+  border: none;
+  background-color: #fff;
+  color: #202124;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.mail-list-item button:hover {
+  background-color: #202124;
+  color: #fff;
+}
+
+.mail-list-item h2 {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.mail-list-item p {
+  margin: 0;
+}
+
+.mail-list-item a {
+  color: #202124;
+  text-decoration: none;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.mail-list-item a:hover {
+  text-decoration: underline;
+}
+
+.mail-list-item button.delete {
+  color: #f44336;
+}
+
+.mail-list-item button.unread {
+  color: #ff9800;
+}
+
+.mail-list-item button.spam {
+  color: #4caf50;
+}
